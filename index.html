@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAU Bookstore Lookup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link href="main.php" >
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body{
+        background-color: white;
+        text-align: center;
+        color: black;
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+
+    #modal {
+    width: 600px;
+    height: 600PX;
+    border: 1px solid red;
+    box-shadow: 0 1px 5px red;
+    border-radius: 5px;
+    margin: 25px auto;
+    position:static;
+  }
+  input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: none;
+    border-bottom: thin solid black;
+    background-color: white;
+  }
+  
+  input:focus {
+    border-color: rgb(152, 0, 0);
+  }
+
+  input[type="Text"]::placeholder{
+    font-family: 'M PLUS 1p', sans-serif;
+  }
+
+</style>
+<script>
+
+</script>
+</head>
+<body>
+    <br>
+    <h1 style> CAU  Bookstore  Lookup</h1>
+    <p style="font-weight:100; margin-top: -10px;">Enter the Book's ISBN to recieve specific details</p>
+    <div id="modal">
+      <br>
+
+      <form action="main.php" name="search" method="post"> 
+
+          <div style="display: inline-block;">
+              <input placeholder="Ex. 9780029001602" name="isbn" style="font-family: 'M PLUS 1p', sans-serif; display: inline-block;font-size:14pt;height:25px;width:300px;" type="text" />
+          </div>
+        <button type="submit" style="display: inline-block; height: 30px; width: 80px; font-size: 12px; margin-top: -10px;"class="btn btn-outline-danger">Danger</button>
+      </form>
+    </div>
+</body>
+</html>
